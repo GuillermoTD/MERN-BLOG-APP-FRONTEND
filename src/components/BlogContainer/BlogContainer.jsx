@@ -4,7 +4,7 @@ import "./BlogContainer.css"
 
 const BlogContainer = () => {
   return (
-    <div className=" p-4 BlogContainer min-h-[90vh]  mx-[10%] relative top-[5rem]">
+    <div className=" BlogContainer min-h-[90vh] mx-[5%] relative top-[5rem]">
       <BlogItem />
       <BlogItem />
       <BlogItem />
