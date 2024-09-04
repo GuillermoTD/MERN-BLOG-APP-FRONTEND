@@ -25,7 +25,7 @@ const BlogContainer = () => {
   // }, []);
 
   return (
-    <div className=" min-h-[90vh] mx-[5%] relative top-[5rem] border border-red-500">
+    <div className=" min-h-[90vh] mx-[5%] relative top-[5rem] ">
       {/* {posts?.map(()=>(<BlogItem/>))} */}
       <BlogItem />
     </div>
