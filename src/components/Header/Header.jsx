@@ -1,5 +1,6 @@
 "use client";
 import { Bell, Settings, SquarePen } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 
@@ -7,17 +8,16 @@ const Header = () => {
   return (
     <div className="fixed navbar px-[10%] bg-white z-10">
       <div className="flex-1 gap-[1rem] items-center">
-        <TypeAnimation
-          sequence={[
-            500,
-            "Bloggy", // initially rendered starting point
-          ]}
-          speed={50}
-          className="text-xl"
-        >
-          <a className="text-xl">Bloggy</a>
-        </TypeAnimation>
-
+        <Link className="text-xl" href="/">
+          <TypeAnimation
+            sequence={[
+              500,
+              "Bloggy", // initially rendered starting point
+            ]}
+            speed={50}
+            className="text-xl"
+          ></TypeAnimation>
+        </Link>
         <div className="form-control">
           <label className="input input-bordered flex items-center gap-2 h-[2.4rem]">
             <input type="text" className="grow" placeholder="Search" />
@@ -26,11 +26,13 @@ const Header = () => {
           </label>
         </div>
       </div>
+
       <div className="flex-none gap-[2rem]">
+        <Link href="create">
         <button>
           <SquarePen size={20} strokeWidth={0.9} />
         </button>
-
+        </Link>
         <button>
           <Bell size={20} strokeWidth={0.9} />
         </button>
