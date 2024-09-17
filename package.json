@@ -15,17 +15,9 @@
     "lexical": "^0.17.1",
     "next": "14.2.5",
     "primereact": "^10.8.2",
-<<<<<<< HEAD
-    "quill": "^2.0.2",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-draft-wysiwyg": "^1.15.0",
-    "react-quill": "^2.0.0",
-=======
     "react": "^18",
     "react-dom": "^18",
     "react-final-form": "^6.5.9",
->>>>>>> f19d84f635c50ed3f382565e605555c02d4ccb40
     "react-type-animation": "^3.2.0"
   },
   "devDependencies": {

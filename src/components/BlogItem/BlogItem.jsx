@@ -6,8 +6,8 @@ import Link from "next/link";
 
 const BlogItem = (data) => {
   return (
-    <Link href="/detail">
-      <div className="w-[500px] h-[200px] flex shadow-md ">
+    <div className="w-[500px] h-[200px] flex shadow-md ">
+      <Link href="/detail" className="border-[4px] border-red-500 flex">
         <div className="h-full w-full ">
           <Image
             className="h-[100%] w-[100%] object-cover"
@@ -44,8 +44,8 @@ const BlogItem = (data) => {
             </div>
           </div>
         </div>
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 };
 

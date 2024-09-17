@@ -1,13 +1,21 @@
 import { useState } from "react";
-import { Editor } from "react-draft-wysiwyg";
+import { Editor } from "primereact/editor";
+
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 import ReactQuill from "react-quill";
-import 'react-quill/dist/quill.snow.css';
+import "react-quill/dist/quill.snow.css";
 
 const EditorText = () => {
-  const [value, setValue] = useState('');
-
-    return <ReactQuill theme="snow" value={value} onChange={setValue} />;
+  const [text, setText] = useState("");
+  return (
+    <div className="w-full">
+      <Editor
+        value={text}
+        onTextChange={(e) => setText(e.htmlValue)}
+        className="h-[340px] min-min-[950px]"
+      />
+    </div>
+  );
 };
 
 export default EditorText;
