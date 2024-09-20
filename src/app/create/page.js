@@ -1,5 +1,4 @@
-"use client";
-
+"use client"
 import React, { useState } from "react";
 import EditorText from "../../components/EditorText/EditorText";
 import { Editor } from "primereact/editor";
